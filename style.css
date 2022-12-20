@@ -1,0 +1,17 @@
+/* body{
+    background-color: rgb(207, 207, 207);
+} */
+
+
+.myCard:hover{
+    transform: scale(1.08);
+    transition: 0.2s ease-in-out;
+}
+
+.chart{
+    background-color: #F8F8F8;
+}
+
+.chart canvas{
+    height: 100px;
+}
