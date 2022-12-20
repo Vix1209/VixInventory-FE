@@ -5,10 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- chart.js script tag -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@4.1.1/dist/chart.umd.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.1/chart.min.js" integrity="sha512-MC1YbhseV2uYKljGJb7icPOjzF2k6mihfApPyPhEAo3NsLUW0bpgtL4xYWK1B+1OuSrUkfOTfhxrRKCz/Jp3rQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-
     <!-- custom css  -->
     <link rel="stylesheet" href="style.css">
 
@@ -20,13 +16,12 @@
 
     <title>Dash</title>
 </head>
-<body>
+<body class="mb-4">
    
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
         <div class="container">
             <a class="navbar-brand text-white"  href="index.html">
-                <!-- <img id="img-nav" src="./vix new.png" alt=""> -->
                 viXpression
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +45,7 @@
             </div>
     </nav>
     <!-- navbar ends  -->
+
 
 
     <!-- topside -->
@@ -118,109 +114,64 @@
     <!-- topside end -->
 
 
-    <!-- graphs -->
+    
+    
+    <!-- table -->
     <div class="container">
+
         <div class="row ">
-            <div class="col-md-6 bg-white my-5">
+            <div class="col-md-4">
                 
-                <div class="dark-color">
-                    <canvas id="myChart1"></canvas>
-                    
-                            
-                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                    
-                    <script>
-                        const ctx1 = document.getElementById('myChart1');
-                    
-                        new Chart(ctx1, {
-                            type: 'pie',
-                            data: {
-                                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                                datasets: [{
-                                    label: 'Product',
-                                    data: [12, 19, 3, 5, 2, 3],
-                                    backgroundColor: [
-                                        'rgba(255,99,132,1)',
-                                        'rgba(54,162,235,1)',
-                                        'rgba(255,206,86,1)',
-                                        'rgba(75,192,192,1)',
-                                        'rgba(153,102,255,1)',
-                                        'rgba(255,159,64,1)',
-                                    ],
-                                    borderWidth: 1,
-                                    borderColor: [
-                                        'rgba(255,99,132,1)',
-                                        'rgba(54,162,235,1)',
-                                        'rgba(255,206,86,1)',
-                                        'rgba(75,192,192,1)',
-                                        'rgba(153,102,255,1)',
-                                        'rgba(255,159,64,1)',
-                                    ]
-                                }]
-                            },
-                            options: {
-                                scales: {
-                                    y: {
-                                        beginAtZero: true
-                                    }
-                                }
-                            }
-                        });
-                    </script>
-                </div>
-                  
             </div>
-            <div class="col-md-6 bg-white my-5">
-                
-                <div class="dark-color">
-                    <canvas id="myChart2" width="120"></canvas>
-                          
-                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                    
-                    <script>
-                        const ctx2 = document.getElementById('myChart2');
-                    
-                        new Chart(ctx2, {
-                            type: 'bar',
-                            data: {
-                                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                                datasets: [{
-                                    label: 'Product',
-                                    data: [12, 19, 3, 5, 2, 3],
-                                    backgroundColor: [
-                                        'rgba(255,99,132,1)',
-                                        'rgba(54,162,235,1)',
-                                        'rgba(255,206,86,1)',
-                                        'rgba(75,192,192,1)',
-                                        'rgba(153,102,255,1)',
-                                        'rgba(255,159,64,1)',
-                                    ],
-                                    borderWidth: 1,
-                                    borderColor: [
-                                        'rgba(255,99,132,1)',
-                                        'rgba(54,162,235,1)',
-                                        'rgba(255,206,86,1)',
-                                        'rgba(75,192,192,1)',
-                                        'rgba(153,102,255,1)',
-                                        'rgba(255,159,64,1)',
-                                    ]
-                                }]
-                            },
-                            options: {
-                                scales: {
-                                    y: {
-                                        beginAtZero: true
-                                    }
-                                }
-                            }
-                        });
-                    </script>
-                </div>
-                  
+            <div class="col-md-8 mt-3">
+                <table class="table dark-color">
+                    <thead class="bg-info">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Order By</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">HP Laptop</th>
+                            <td>Electronics</td>
+                            <td>1</td>
+                            <td>
+                                Chijioke
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Toshiba Pendrive</th>
+                            <td>Electronics</td>
+                            <td>3</td>
+                            <td>
+                                Uchenna
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Eraser</th>
+                            <td>Stationary</td>
+                            <td>20</td>
+                            <td>
+                                Jude
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Marker</th>
+                            <td>Stationary</td>
+                            <td>50</td>
+                            <td>
+                                Somto
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
             </div>
-        </div>
+        </div>        
     </div>
-    <!-- graph ends  -->
+    <!-- table ends  -->
 
 
 
