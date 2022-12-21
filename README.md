@@ -1,1 +1,1 @@
-A fullstack Ecommerce site highlighting the implementation of html, css and bootstrap and django being used for the backend
+A fullstack Inventory Managegement website highlighting the implementation of html, css and bootstrap, and django for the backend
